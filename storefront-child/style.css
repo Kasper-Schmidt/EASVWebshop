@@ -1,0 +1,863 @@
+/*
+Theme Name: Storefront-Child
+Template: storefront
+Author: Kasper Schmidt
+Description: Child theme for my parent theme
+Version: 4.2.0.1682941435
+Updated: 2023-05-01 11:43:55
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+
+
+/* --------- HEADER ---------*/
+
+.site-header .site-branding img {
+    width: 100px;
+    height: 100px;
+}
+
+.site-header, .secondary-navigation ul ul, .main-navigation ul.menu > li.menu-item-has-children:after, .secondary-navigation ul.menu ul, .storefront-handheld-footer-bar, .storefront-handheld-footer-bar ul li > a, .storefront-handheld-footer-bar ul li.search .site-search, button.menu-toggle, button.menu-toggle:hover {
+    background-color: #AB150D;
+    border-bottom: 4px solid #e7610d;
+}
+
+.main-navigation ul li a, .site-title a, ul.menu li a, .site-branding h1 a, button.menu-toggle, button.menu-toggle:hover, .handheld-navigation .dropdown-toggle {
+    color:#fcfcfc;
+}
+
+.main-navigation ul li a:hover, .main-navigation ul li:hover > a, .site-title a:hover, .site-header ul.menu li.current-menu-item > a {
+    color: #fcfcfc;
+    text-decoration: underline;
+}    
+
+.widget_search form:not(.wp-block-search) input[type=text], .widget_search form:not(.wp-block-search) input[type=search], .widget_product_search form:not(.wp-block-search) input[type=text], .widget_product_search form:not(.wp-block-search) input[type=search] {
+    border: 2px solid #E7610D;
+    border-radius: 10px;
+}
+
+.site-search .widget_product_search form::before {
+    color:#E7610D;
+}
+
+#masthead {
+    margin-bottom: 2.5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------- FORSIDE ---------*/
+
+
+.menuboks {
+    background-color: #ab150d;
+    height: 12.5vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+    border-bottom: 4px solid #e7610d;
+}
+
+.w-100 {
+    width: 100% !important;
+    height: 75vh;
+}
+
+.clothcontainer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    
+}
+
+.clothbox {
+    width: 25%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.clothbox a {
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.clothbox:hover {
+    cursor: pointer;
+    opacity:0.8;
+}
+
+#cloth {
+    object-fit: contain;
+    width: 70%;
+    height: 300px;
+    transition: .3s ease-in-out;
+
+}
+
+
+.clothpara {
+    color:#e7610d;
+    font-size: 1.5rem;
+    font-family: bfont;
+    margin: 0;
+  
+}
+
+.clothpara:hover {
+    cursor: pointer;
+    opacity:0.8;
+}
+
+.sektionmiljo {
+    width: 100%;
+    height: auto;
+}
+
+#miljobillede {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 2.5%;
+}
+
+#miljoprodukt {
+    width: 100%;
+    height: 600px;
+}
+
+#carouselExampleIndicators {
+    margin-bottom: 2.5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------- KONTAKT ---------*/
+
+.kontaktside {
+    display: flex;
+    width: 94vw;
+    height: 90vh ;
+    background-image: url("images/BlurDetGodeBilledeAfDeTo.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin:0;
+    margin-bottom: 2.5%;
+
+}
+
+.kontaktvenstre {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.kontaktboks {
+    display: flex;
+    justify-content: center;
+    border: 2px solid #e7610d;
+    width: 45%;
+    height: 175px;
+    margin-top:10%;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 10%;
+
+}
+
+.indrevenstre {
+    display: flex;
+    align-items: center;
+    margin-right: 25px;
+
+
+}
+
+.indrehojre {
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+    justify-content: center;
+
+}
+
+
+#kontaktikon {
+    height: 75px;
+    width: 75px;
+}
+
+.kontakttekst {
+    font-family: 'Quicksand', sans-serif;
+    color:#ab150d;
+    margin:0;
+}
+
+.kontaktinfo {
+    font-family: bfont;
+    font-weight: bold;
+    color:#e7610d;
+    font-size: 1.3rem;
+    margin:0;
+
+}
+
+.kontakthojre {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+#wpforms-form-96 {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid #E7610D;
+    border-radius: 10px;
+    padding:1em;
+    width: 30vw;
+
+}
+
+.wpforms-field-label {
+    color: #ab150d !important;
+    font-family: 'Quicksand', sans-serif;
+
+}
+
+#wpforms-submit-96 {
+    background-color: #E7610D;
+    color: #fcfcfc;
+}    
+
+.wpforms-field-required {
+    border: 1px solid #E7610D !important;
+
+}
+
+#wpforms-96-field_1 {
+    padding: 0;
+    margin:0;
+}
+
+.woocommerce-breadcrumb {
+    display: none;
+}
+
+.storefront-breadcrumb {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------- SHOP ---------*/
+
+
+
+.productcontainer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.woocommerce ul.products li.product, .woocommerce-page ul.products li.product{ 
+    width: 18%;
+    margin-top: 2%;
+    margin-left:3%;
+}
+
+.woocommerce ul.products li.product a {
+    margin:0;
+}
+
+
+
+.woocommerce ul.products li.product .woocommerce-loop-category__title, .woocommerce ul.products li.product .woocommerce-loop-product__title, .woocommerce ul.products li.product h3 {
+    font-size: 1rem;
+    color: #ab150d;
+    font-family: bfont;
+    font-weight: 300;
+
+}
+
+.woocommerce ul.products li.product .price {
+    color:#e7610d;
+    font-weight: bold;
+    font-family: bfont;
+    font-size: 1rem;
+
+
+}
+
+.woocommerce ul.products li.product .button {
+    background-color: #e7610d;
+    width: 75px;
+    color:#fcfcfc;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.ting {
+    display: flex;
+}
+
+.produktvenstre {
+    width: 10vw;
+    margin-left: 2%;
+}
+
+.produkthojre {
+    width:90vw;
+}
+
+.wpfFilterButtons {
+    width: 70px;
+    height: 15px;
+    font-size: 1rem;
+    min-height: none;
+    padding:0;
+
+}
+
+.wpfClearButton {
+    width: 70px;
+    height: 15px;
+    min-height: none;
+    padding:0;
+
+}
+
+.wpfButton {
+    background-color: #e7610d;
+    color: #fcfcfc;
+    width: 70px;
+    height: 15px;
+    font-size: 1rem;
+    padding:0;
+
+}
+
+.wpfFilterButton.wpfButton, .wpfClearButton.wpfButton {
+    min-height: 10px;
+}
+
+.wpfFilterButton.wpfButton, .wpfClearButton.wpfButton {
+    width: 65% !important;
+
+}
+
+.wpfClearButton.wpfButton {
+    text-transform: lowercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------- CART ---------*/
+
+
+.hentry .entry-content a.button, .hentry .entry-content a.components-button:not(.is-link), .hentry .entry-content a.wp-block-button__link {
+    background-color: #E7610D;
+    color: #fcfcfc;
+    border-radius: 10px;
+}
+
+
+
+.woocommerce-info, .woocommerce-noreviews, p.no-comments {
+    background-color: #969696;
+    color: #fcfcfc;
+}
+
+button.disabled, button:disabled, input[type=button].disabled, input[type=button]:disabled, input[type=reset].disabled, input[type=reset]:disabled, input[type=submit].disabled, input[type=submit]:disabled, .button.disabled, .button:disabled, .wc-block-grid__products .wc-block-grid__product .wp-block-button__link.disabled, .wc-block-grid__products .wc-block-grid__product .wp-block-button__link:disabled, .added_to_cart.disabled, .added_to_cart:disabled {
+    background-color: #E7610D;
+    color: #fcfcfc;
+    opacity: 1 !important;
+    border-radius: 10px;
+}
+
+.wp-element-button {
+    border-radius: 10px;
+
+}
+
+.input-text {
+    border-radius: 10px;
+}
+
+.post-edit-link {
+    color: rgba(0, 0, 0, 0);
+}
+
+.hentry .entry-content a {
+    text-decoration: none;
+    color: #6d6d6d;
+}
+
+button, input[type="button"], input[type="reset"], input[type="submit"], .button, .widget a.button {
+    background-color: #E7610D;
+    color: #fcfcfc;
+}
+
+h1 {
+    color: #AB150D;
+}
+
+h2 {
+    color: #AB150D;
+}
+
+.col2-set {
+    width: 50%;
+
+}
+
+.col-full {
+	max-width: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------- CHECKOUT ---------*/
+
+.woocommerce-info, .woocommerce-noreviews, p.no-comments {
+    background-color: #cccbcb;
+}
+
+#payment .place-order .button {
+    background-color: #E7610D;
+    color: #fcfcfc;
+    border-radius: 10px;
+}
+
+.woocommerce .col2-set .col-1, .woocommerce-page .col2-set .col-1 {
+    float: left;
+    width: 90%;
+    margin-bottom: 20px;
+    flex: 0 0 48%;
+    max-width: 90%;
+    }
+
+.form-row {
+    display: -ms-inherit;
+    display: inherit;
+    -ms-flex-wrap: inherit;
+    flex-wrap: inherit;
+    margin-right: -5px;
+    margin-left: -5px;
+}
+
+.col2-set .col-1, .col2-set .col-2 {
+    width: 90%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------- RETUR ---------*/
+
+.returtekst {
+    width: 80%;
+    margin-left: 10%;
+}
+
+.sidetitel {
+    color: #AB150D;
+    font-size: 1.8rem;
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.overskrift {
+    color: #AB150D;
+    font-size: 1.5rem;
+    font-family: 'Quicksand', sans-serif;
+    margin-top:5%;
+
+}
+
+.brodtekst {
+    color:#292929;
+    font-size: 1.2rem;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------- FOOTER ---------*/
+
+.footerboks {
+    background-color: #ab150d;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    padding-top: 2%;
+    border-top: 4px solid #e7610d;
+    
+}
+
+.footerboks h3 {
+    font-family: 'Quicksand', sans-serif;
+    color:white;
+    margin-left: 30%;
+
+}
+
+.footerboks p {
+    font-family: bfont;
+    color:white;
+    margin-left: 30%;
+    font-size: 1.2rem;
+}
+
+
+.venstreside {
+    width: 33.3%;
+}
+
+.midten {
+    width: 33.3%;
+
+}
+
+.hojreside {
+    width: 33.3%;
+}
+
+.url {
+    margin:0;
+}
+
+.url:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.tlfnummer:hover {
+    text-decoration: underline; 
+    cursor: pointer;
+
+}
+
+.somebilleder {
+    display: flex;
+    margin-left: 80px;
+    gap: 10px;
+}
+
+.folg {
+    margin:0;
+    margin-top: 7%;
+}
+
+#someimg {
+    margin:0;
+    width: 50px;
+    height: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------- MEDIA QUERY ---------*/
+
+
+/* For Tablets: */
+@media screen and (max-width: 768px) {
+
+
+
+/* ----- FORSIDE ----- */
+
+    .w-100 {
+        width: 100% !important;
+        height: auto;
+    }
+    
+    #cloth {
+        height: 225px;
+    }
+    
+    .clothpara {
+        font-size: 1.2rem;
+    }
+    
+    #miljobillede {
+        height: auto;
+    }
+    
+    #miljoprodukt {
+        height: auto;
+    }
+    
+   
+
+
+/* ----- KONTAKT ----- */
+
+.kontaktside {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    height: auto;
+}
+
+.kontaktvenstre {
+  flex-direction: column;
+  height:450px;
+  margin:0;
+  padding:0;
+}
+
+.kontaktboks {
+    width: 80%;
+}
+
+.kontaktinfo {
+    font-size: 1.2rem;
+}
+
+.kontakthojre {
+    width: 85%;
+}
+
+#wpforms-form-96 {
+   width: 70vw;
+
+}
+
+
+
+
+
+
+/* ----- BUTIK ----- */
+
+.ting {
+    display: flex;
+    flex-direction: column;
+}
+
+.wpfMainWrapper {
+    display: flex;
+}
+
+.wpfFilterButton {
+    margin-top: 30px !important;
+}
+
+.columns-4 {
+    margin-top: 5%;
+}
+
+.woocommerce ul.products li.product .button {
+    font-size: 1rem;
+}
+
+
+
+
+
+
+/* --------- RETUR ---------*/
+
+
+.returtekst {
+    width: 90%;
+    margin-left: 5%;
+}
+
+
+
+
+
+/* --------- HEADER ---------*/
+
+.widget_search form:not(.wp-block-search) input[type=text], .widget_search form:not(.wp-block-search) input[type=search], .widget_product_search form:not(.wp-block-search) input[type=text], .widget_product_search form:not(.wp-block-search) input[type=search] {
+    width: 175px;
+}
+
+
+
+
+
+
+
+
+/* --------- FOOTER ---------*/
+
+.footerboks h3 {
+    margin-left: 5% ;
+    font-size: 1.5rem;
+}
+
+.footerboks p {
+    margin-left: 5% !important;
+    font-size: 1.2rem;
+}
+
+.midten {
+    padding-left: 5%;
+
+}
+
+.somebilleder {
+    margin-left: 0;
+    gap:5px
+}
+
+
+
+
+
+.hojreside {
+    width: 33.3%;
+}
+
+.url {
+    margin:0;
+}
+
+.url:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.tlfnummer:hover {
+    text-decoration: underline; 
+    cursor: pointer;
+
+}
+
+
+
+.folg {
+    margin:0;
+    margin-top: 7%;
+}
+
+#someimg {
+    margin:0;
+    width: 40px;
+    height: 40px;
+}
+
+  }
