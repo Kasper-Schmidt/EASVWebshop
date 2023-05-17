@@ -29,8 +29,6 @@
 
 
 
-
-
             <div class="midten">
                 <h3 class="hovedh">RETUR</h3>
                 <a href="http://webshopeasv.local/retur/">
@@ -40,13 +38,20 @@
                     <p class="url">Ombytning</p>
                 </a>
 
-                <p class="folg">Følg us på</p>
+                <p class="folg">Følg os på</p>
             
                 <div class="somebilleder">
+
+                    <a href="https://www.facebook.com/EASVdk">
                     <img id="someimg" src="<?php echo get_stylesheet_directory_uri() ?>/images/facebookimg.png" alt="">
+                    </a>
+                    <a href="https://www.linkedin.com/school/erhvervsakademi-sydvest/">
                     <img id="someimg" src="<?php echo get_stylesheet_directory_uri() ?>/images/linkedinimg.png" alt="">
+                    </a>
+                    <a href="https://www.instagram.com/erhvervsakademi_sydvest/">
                     <img id="someimg" src="<?php echo get_stylesheet_directory_uri() ?>/images/instagramimg.png" alt="">
-                    <img id="someimg" src="<?php echo get_stylesheet_directory_uri() ?>/images/twitterimg.png" alt="">
+                    </a>
+
                 </div>
 
             </div>
@@ -54,9 +59,7 @@
 
 
 
-
-
-
+            
         <div class="hojreside">
             <h3 class="hovedh">HOVEDHJEMMESIDE</h3>
             <a href="https://www.easv.dk/da/">
